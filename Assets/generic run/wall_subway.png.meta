@@ -1,19 +1,21 @@
 fileFormatVersion: 2
-guid: 2377e0276e202144d8a8563f980ff3fa
+guid: 2d7950ea4a87bf3489824a47b03a82d6
 TextureImporter:
   fileIDToRecycleName:
-    21300000: player_set_0
-    21300002: player_set_1
-    21300004: player_set_2
-    21300006: player_set_3
-    21300008: player_set_4
-    21300010: player_set_5
-    21300012: player_set_6
-    21300014: player_set_7
-    21300016: player_set_8
-    21300018: player_set_9
-    21300020: player_set_10
-    21300022: player_set_11
+    21300000: wall_subway_0
+    21300002: wall_subway_1
+    21300004: wall_subway_2
+    21300006: wall_subway_3
+    21300008: wall_subway_4
+    21300010: wall_subway_5
+    21300012: wall_subway_6
+    21300014: wall_subway_7
+    21300016: wall_subway_8
+    21300018: wall_subway_9
+    21300020: wall_subway_10
+    21300022: wall_subway_11
+    21300024: wall_subway_12
+    21300026: wall_subway_13
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -52,7 +54,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -96,33 +98,253 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: player_set_0
+      name: wall_subway_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 35
-        width: 13
+        x: 0
+        y: 552
+        width: 176
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f666d9d89dad30e478cf7a53e9293025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_subway_1
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 552
+        width: 176
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a02d9a802988f14a983e6d57b33b30e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_subway_2
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 552
+        width: 176
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e544a2886a18f7f40a7145cb32619c18
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_subway_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 392
+        width: 176
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41d349fecd6fcbe4d8169d81412679ae
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_subway_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 392
+        width: 176
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a09136b39fd0f4449bee3485e036eca
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_subway_5
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 392
+        width: 176
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7efbfbe1e082d6d439af551c9abd94f0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_subway_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 232
+        width: 176
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b070634f7687fd54398aa04b35b84d09
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_subway_7
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 232
+        width: 176
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07711818f8421bd4381cd1f3e5ee4c09
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_subway_8
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 232
+        width: 176
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67feb8edc2340234da8ca8d26a03945b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_subway_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 72
+        width: 41
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e06923cc0d4de8419a1f1d9420d1d10
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_subway_10
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 72
+        width: 33
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06c554b77ecf14b49b52cffc941f9a2b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_subway_11
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 200
+        width: 176
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ecc405e04030c034b9ca3a2ac88bf62b
+      spriteID: f2a49658f19a50e4f9d3aba738c2e1f8
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_set_1
+      name: wall_subway_12
       rect:
         serializedVersion: 2
-        x: 18
-        y: 35
-        width: 13
-        height: 16
+        x: 433
+        y: 150
+        width: 21
+        height: 56
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,19 +352,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb36c8b799fdf2240923716f03905534
+      spriteID: 3f375cfd8db596a4f90ee21650771ea9
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_set_2
+      name: wall_subway_13
       rect:
         serializedVersion: 2
-        x: 2
-        y: 18
-        width: 13
-        height: 16
+        x: 11
+        y: 568
+        width: 164
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,187 +372,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90486f6a713300f42a17851dbedea501
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_set_3
-      rect:
-        serializedVersion: 2
-        x: 18
-        y: 18
-        width: 13
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d8eee3dddd3584548805d203b484f9de
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_set_4
-      rect:
-        serializedVersion: 2
-        x: 34
-        y: 18
-        width: 13
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 64c5568c4db23f24ab894fa78471dfa8
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_set_5
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 18
-        width: 13
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9a59ddcd0ab90e146af2377aad01c2f7
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_set_6
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 1
-        width: 11
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1688c58e7fb55cb44826efa0c8997c76
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_set_7
-      rect:
-        serializedVersion: 2
-        x: 19
-        y: 1
-        width: 10
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 40e6885c09167f44cb9f406f5c50cf7a
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_set_8
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 1
-        width: 11
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 364c1660c19b5e1448ab0d2c8ac2c711
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_set_9
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 1
-        width: 13
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 333b40c8ccfc98948a0185589a347783
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_set_10
-      rect:
-        serializedVersion: 2
-        x: 65
-        y: 1
-        width: 14
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b09fe31bd7c281d4999a91e3892b1914
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_set_11
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 1
-        width: 16
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 97533285f3cdb684b8121225e29096c7
+      spriteID: 6a8af29c21af3d8498d0f808303a9645
       vertices: []
       indices: 
       edges: []
@@ -338,7 +380,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: d44e826b525837f49acc855b4ab69cb6
+    spriteID: 782392110c4c05d46906de6e7dfa40b3
     vertices: []
     indices: 
     edges: []
