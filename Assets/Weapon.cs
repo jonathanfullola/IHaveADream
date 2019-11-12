@@ -8,14 +8,15 @@ public class Weapon : MonoBehaviour
     public float Damage = 10;
     public LayerMask whatToHit;
 
-    float timeToFire = 0;
+    float timeToFire = 1.5f;
 
     Transform firePoint;
+    GameObject blast;
 
     void Awake()
     {
         firePoint = transform.FindChild("FirePoint");
-
+        blast = GameObject.Find("blast");
     }
 
 
@@ -32,7 +33,13 @@ public class Weapon : MonoBehaviour
         {
             if (Input.GetButtonUp("Fire1"))
             {
+                Debug.Log("button up");
+                blast.GetComponent<Animator>().SetInteger("blastInt",1);
                 Shoot();
+                if (blast.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("blast"))
+                {
+                    blast.GetComponent<Animator>().SetInteger("blastInt", 0);
+                }
             }
         }else
         {
@@ -42,8 +49,10 @@ public class Weapon : MonoBehaviour
                 Shoot();
             }
         }
+
     }
 
+ 
 
     void Shoot()
     {
