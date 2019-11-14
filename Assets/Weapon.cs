@@ -17,8 +17,14 @@ public class Weapon : MonoBehaviour
     public Transform BulletTrailMuzzel;
     float timeToSpawnEffect = 0;
     public float effectSpawnRate = 10;
+    public bool muzzleBool = true;
+    public bool laserBool = false;
 
-    void Awake()
+    GameObject muzzle, laser;
+    public Sprite muzzleImage;
+    public Sprite laserImage;
+
+    void Start()
     {
         firePoint = transform.FindChild("FirePoint");
         blast = GameObject.Find("blast");
@@ -28,12 +34,29 @@ public class Weapon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-            if(Input.GetButtonUp("Fire1") && Time.time > timeToFire && Time.time >= timeToSpawnEffect)
-            {
-                timeToFire = Time.time + 1 / fireRate;
-                ShootMuzzel();
-                timeToSpawnEffect = Time.time + 1 / effectSpawnRate;
-            }
+        if (Input.GetAxis("Mouse ScrollWheel") > 0) // forward
+        {
+            Debug.Log("muzzel");
+            muzzleBool = true;
+            laserBool = false;
+            this.GetComponent<SpriteRenderer>().sprite = muzzleImage;
+
+        }
+        else if (Input.GetAxis("Mouse ScrollWheel") < 0) // backwards
+        {
+            Debug.Log("laser");
+            laserBool = true;
+            muzzleBool = false;
+            this.GetComponent<SpriteRenderer>().sprite = laserImage;
+        }
+
+        if (muzzleBool && Input.GetButtonUp("Fire1") && Time.time > timeToFire && Time.time >= timeToSpawnEffect)
+        {
+            timeToFire = Time.time + 1 / fireRate;
+            ShootMuzzel();
+            timeToSpawnEffect = Time.time + 1 / effectSpawnRate;
+        }        
+        
     }
 
  
