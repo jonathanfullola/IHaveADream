@@ -21,7 +21,7 @@ TagManager:
   - Background
   - Ground
   - wall
-  - 
+  - line
   - 
   - 
   - 
@@ -53,4 +53,7 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: line
+    uniqueID: 1660263371
     locked: 0
