@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets._2D;
 
 public class Weapon : MonoBehaviour
 {
@@ -23,6 +24,22 @@ public class Weapon : MonoBehaviour
     GameObject muzzle, laser;
     public Sprite muzzleImage;
     public Sprite laserImage;
+
+    public Camera cam;
+    public RaycastHit2D hit;
+    public LayerMask cullingMask;
+    public float Maxdistance;
+    public bool isFlying;
+    public Vector2 loc;
+    public float speed = 10f;
+    public Transform hand;
+
+    public PlatformerCharacter2D pc2d;
+    public LineRenderer LR;
+
+    Vector2 mousePosition;
+    Vector2 firePointPosition;
+    Vector2 targetPos;
 
     void Start()
     {
@@ -55,20 +72,19 @@ public class Weapon : MonoBehaviour
             timeToFire = Time.time + 1 / fireRate;
             ShootMuzzel();
             timeToSpawnEffect = Time.time + 1 / effectSpawnRate;
-        }        
+        }
         
     }
 
- 
 
     void ShootMuzzel()
     {
-        Vector2 mousePosition = new Vector2(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, Camera.main.ScreenToWorldPoint(Input.mousePosition).y);
-        Vector2 firePointPosition = new Vector2(firePoint.position.x, firePoint.position.y);
+        mousePosition = new Vector2(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, Camera.main.ScreenToWorldPoint(Input.mousePosition).y);
+        firePointPosition = new Vector2(firePoint.position.x, firePoint.position.y);
 
         Effect();
            
-        RaycastHit2D hit = Physics2D.Raycast(firePointPosition, mousePosition - firePointPosition, 100, whatToHit);
+        hit = Physics2D.Raycast(firePointPosition, mousePosition - firePointPosition, 100, whatToHit);
         Debug.DrawLine(firePointPosition, mousePosition,Color.cyan);
         if (hit.collider != null)
         {

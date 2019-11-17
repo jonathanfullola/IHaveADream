@@ -19,6 +19,7 @@ namespace UnityStandardAssets._2D
         private Animator m_Anim;            // Reference to the player's animator component.
         private Rigidbody2D m_Rigidbody2D;
         private bool m_FacingRight = true;  // For determining which way the player is currently facing.
+        public bool canMove = true;
 
         private Transform playerGraphics;
 
@@ -39,6 +40,7 @@ namespace UnityStandardAssets._2D
 
         private void FixedUpdate()
         {
+            
             m_Grounded = false;
 
             // The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
@@ -59,7 +61,7 @@ namespace UnityStandardAssets._2D
         public void Move(float move, bool crouch, bool jump)
         {
             //only control the player if grounded or airControl is turned on
-            if (m_Grounded || m_AirControl)
+            if (m_Grounded || m_AirControl && canMove)
             {
                 // Reduce the speed if crouching by the crouchSpeed multiplier
                 move = (crouch ? move*m_CrouchSpeed : move);
